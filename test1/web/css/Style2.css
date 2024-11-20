@@ -1,0 +1,203 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 25, 2023, 11:12:22 PM
+    Author     : OS
+*/
+
+
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  .header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  }
+  
+  .header__title {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 15px;
+  }
+  
+  .header__nav {
+  display: flex;
+  justify-content: center;
+  }
+  
+  .header__nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  }
+  
+  .header__nav__item {
+  margin-right: 20px;
+  }
+  
+  .header__nav__link {
+   color: rgb(223, 116, 70);
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+  
+   /* Main Content Styles */
+ .intro-image {
+  margin-top: 20px;
+}
+.col-md-8 {
+  position: relative;
+}
+
+.col-md-8::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #c6cce2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.col-md-4 {
+  position: relative;
+}
+
+.col-md-4::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #c6cce2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.subscribe-form__caption {
+  text-align: center;
+}
+ 
+.col-md-8 img {
+  margin-bottom: 20px;
+}
+  
+.table-of-contents {
+  counter-reset: section;
+}
+  
+.table-of-contents li {
+  list-style-type: none;
+  counter-increment: section;
+  margin-bottom: 10px;
+  }
+  
+  .table-of-contents li:before {
+  content: counter(section) ". ";
+  font-weight: bold;
+  }
+  
+  /* Meet Kate Section */
+  .section-title {
+  text-align: center;
+  }
+  
+  .round-image {
+    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .social-icons__image {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  }
+  
+  .social-icons__link:hover .social-icons__image {
+  opacity: 0.7;
+  }
+  
+  /* Subscribe Form */
+  .subscribe-form {
+  margin-top: 20px;
+  }
+  
+  .subscribe-caption {
+  text-align: center;
+  }
+  
+  .subscribe-form__button.btn-primary {
+    background-color: rgb(162, 151, 211);
+    color: white;
+    
+  }
+  
+  
+  /* Most Wanted Destinations */
+
+  .most-wanted-destinations {
+    margin-top: 40px;
+  }
+  
+  .most-wanted-destinations {
+  padding-left: 10px;
+  }
+  
+  .most-wanted-destinations p {
+  font-size: 20px;
+  }
+ /* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.footer__text {
+  font-size: 14px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+}
+
